@@ -21,7 +21,7 @@ const onSearchFormSubmit = event => {
   const searchValue = searchForm.elements.user_query.value;
 
   galleryEl.innerHTML = '';
-
+  searchForm.reset();
   loader.style.display = 'block';
 
   fetchPhotos(searchValue)
